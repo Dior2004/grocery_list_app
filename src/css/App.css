@@ -4,11 +4,13 @@
   min-height: 100vh;
   padding: 1em;
   background-color: #eee;
+  transition: 0.3s;
 }
 
 .wrapper {
   max-width: 500px;
   min-height: 93vh;
+  transition: 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -120,4 +122,18 @@ footer {
 button,
 input[type="checkbox"] {
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .App {
+    padding: 0;
+  }
+
+  .wrapper {
+    width: 100%;
+    min-height: 100vh;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: none;
+  }
 }
